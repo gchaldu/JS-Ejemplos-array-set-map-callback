@@ -42,3 +42,30 @@ otrasCosas[2].nombre = "Martin";
 console.log("cosas: ", cosas);
 console.log("otrasCosas: ", otrasCosas);
 
+//Desestructuring
+
+const numeros = [1, 2, 3, 4];
+
+// Desestructuración
+const [a, b] = numeros;
+
+console.log(a); // 1
+console.log(b); // 2
+
+const numeros = [1, 2, 3, 4];
+
+// Saltar el segundo elemento
+const [primero, , tercero] = numeros;
+
+console.log(primero); // 1
+console.log(tercero); // 3
+
+const numeros = [1];
+
+// Si el array no tiene suficientes valores, puedes asignar valores predeterminados
+const [a = 10, b = 20] = numeros;
+
+console.log(a); // 1
+console.log(b); // 20
+
+
